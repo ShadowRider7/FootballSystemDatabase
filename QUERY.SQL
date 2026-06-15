@@ -109,3 +109,8 @@ INSERT INTO Bookings (booking_id, user_id, match_id, seat_number, payment_status
 (518, 19, 120, 'O-10', 'Confirmed', 160.00),
 (519, 5, 103, 'P-01', 'Refunded', 130.00),
 (520, 6, 105, 'Q-18', 'Confirmed', 80.00);
+
+
+-- Query 1: Retrieve all upcoming football matches belonging to the 'Champions League' where the match status is 'Available'.
+
+SELECT * FROM Matches WHERE tournament_category = 'Champions League' AND match_status='Available';
